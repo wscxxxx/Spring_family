@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--我们可以将这个bean理解为我们的javaBean，其中两个property标签即表示给IntrduceDemo类中的name和age属性赋值！-->
+
+    <!--Beans_1-->
+    <bean id="IntrduceDemo" class="com.test1.Beans_1.IntrduceDemo" scope="singleton" init-method="init"
+          destroy-method="destroy">
+        <property name="name" value="李佳奇"/>
+        <property name="age" value="2"/>
+    </bean>
+
+
+    <!--Beans_2-->
+    <bean id="Chinese" class="com.test1.Beans_2.PersonFactory" factory-method="getPerson">
+        <!--给getPerson()传参数-->
+        <constructor-arg value="Chinese"/>
+        <property name="msg" value="啦啦啦"/>
+    </bean>
+
+    <bean id="American" class="com.test1.Beans_2.PersonFactory" factory-method="getPerson">
+        <constructor-arg value="American"/>
+        <property name="msg" value="嘿嘿嘿"/>
+    </bean>
+
+
+    <!--Beans_3-->
+    <bean id="carFactory" class="com.test1.Beans_3.InstanceFactory"></bean>
+
+    <bean id="car2" factory-bean="carFactory" factory-method="getCar">
+        <constructor-arg value="Ferrari"/>
+        <!--<constructor-arg value="Maserati"/>-->
+    </bean>
+</beans>
