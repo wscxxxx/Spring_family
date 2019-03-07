@@ -7,6 +7,7 @@
     <groupId>Spring</groupId>
     <artifactId>SpringDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
+<<<<<<< HEAD
     <build>
         <plugins>
             <plugin>
@@ -21,4 +22,8 @@
     </build>
 
 
+=======
+
+    
+>>>>>>> 84a2aed774e27347adbb672466eafe973580267a
 </project>

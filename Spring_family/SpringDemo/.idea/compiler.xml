@@ -10,7 +10,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+<<<<<<< HEAD
       <module name="SpringDemo" target="6" />
+=======
+      <module name="SpringDemo" target="1.5" />
+>>>>>>> 84a2aed774e27347adbb672466eafe973580267a
     </bytecodeTargetLevel>
   </component>
 </project>

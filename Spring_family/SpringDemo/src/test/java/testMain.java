@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import com.test1.Beans_1.IntrduceDemo;
+=======
+import com.test1.IntrduceDemo;
+>>>>>>> 84a2aed774e27347adbb672466eafe973580267a
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class testMain { public static void main(String[] args) {
